@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204 43% 93%);
+}
+
+
+
+/* general */
+/* ******* */
+
+.practice {
+    font-family: 'Karla', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    
+    margin-top: 2rem; 
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px lightgrey; 
+}
+
+.join,
+.subscription,
+.why-us {
+    padding: 1.7rem 1.5rem;
+}
+
+
+@media screen and (min-width: 800px) {
+    .practice {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 650px;
+
+        margin-top: 10rem;
+    }
+
+    .join,
+    .subscription,
+    .why-us {
+        padding: 2.5rem;
+    }
+
+    .join {
+        width: 100%;
+    }
+
+    .subscription,
+    .why-us {
+        width: 50%
+    }
+}
+
+/* join our community */
+/* ****************** */
+
+.join {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(218, 22%, 67%);
+
+    border-radius: 10px 10px 0 0;
+}
+
+.title,
+.subtitle {
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    color: hsl(179, 62%, 43%);
+}
+
+@media screen and (min-width: 1440px) {
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+.guarantee {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(71, 73%, 54%);
+}
+
+.text {
+    line-height: 1.7;
+    font-weight: 200;
+}
+
+
+/* subscription */
+/* ************ */
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 800px) {
+    .subscription {
+        border-radius: 0 0 0 10px;
+    }
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+
+    display: block;
+    padding: 1rem;
+
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 6px;
+    box-shadow: 0px 5px 10px grey;
+}
+
+.price {
+    font-size: 2rem;
+
+    position: relative;
+    margin: 0;
+}
+
+.price-month {
+    font-size: 1rem;
+    font-weight: 200;
+
+    position: relative;
+    bottom: .35rem;
+    left: .2rem;
+}
+
+.text-subs {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* why us */
+/* ****** */
+
+.why-us {
+    background-color: hsla(179, 62%, 43%, 0.5);
+    color: hsl(0, 0%, 100%);
+
+    border-radius: 0 0 10px 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .why-us {
+        border-radius: 0 0 10px 0;
+    }
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 0;
+
+    font-weight: 200;
+}
+
+.list-item {
+    margin-bottom: .25rem;
+}
